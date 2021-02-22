@@ -1,0 +1,41 @@
+div.interface {
+	width:7.5in;
+	margin:0 auto;
+	min-height:7.5in;
+}
+.saut {
+	page-break-before: always;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+@media screen {
+body {
+	background:#666;
+	background-image: -moz-radial-gradient(closest-side, rgba(0,0,0,0) 70%, rgba(0,0,0,.5)), url(texturerouge.png);
+	background-image: -webkit-radial-gradient(closest-side, rgba(0,0,0,0) 70%, rgba(0,0,0,.5)), url(texturerouge.png);
+	background-image: radial-gradient(closest-side at center, rgba(0,0,0,0) 70%, rgba(0,0,0,.5)), url(texturerouge.png);
+	background-size: 100%, auto;
+	background-attachment: fixed, scroll;
+}
+div.interface {
+	box-shadow: 0 0 1em black;
+	padding:.5in;
+	background:white;
+}
+}
+@media print {
+a{
+	color:inherit;
+	text-decoration: inherit;
+}
+}
+@page {
+	size: 8.5in 11in;
+	margin: .5in;
+}

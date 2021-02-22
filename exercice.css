@@ -1,0 +1,42 @@
+body {
+	font-family: arial;
+}
+ul {
+	margin: 0;
+	list-style-type: decimal;
+}
+li > input {
+	vertical-align: bottom;
+	float:right;
+}
+li {
+	border:1px solid #CCC;
+	padding:.5em;
+	margin:.25em 0;
+}
+.solution {
+	display:none;
+	background-color:rgb(240,240,240);
+	font-family:courier new;
+	padding:.25em;
+	margin-top:.25em;
+}
+input.tout {
+	float:right;
+	zdisplay:none;
+	margin-top:1em;
+}
+input:checked ~ .solution, input:checked ~ * .solution {
+	display:block;
+}
+div.reponse {
+	border: 1px solid black;
+	box-shadow: 1px 1px 0px 0px rgba(0,0,0,1) inset;
+	line-height: 1.5em;
+	min-height:1.5em;
+}
+@media print {
+	input {
+		display: none;
+	}
+}
